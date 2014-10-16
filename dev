@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+# include my library helpers for colorized echo and require_brew, etc
+source ./lib/echobot.sh
+
+function doDeploy(){
+	case "$1" in
+	    all )
+	        doDeploy bridge
+	        doDeploy farm
+	        doDeploy hyper
+	        doDeploy nuke
+	        doDeploy town
+	    ;;
+	    bridge )
+	    	bot "deploying bridge"
+	        scp -r drawbridge.club/* antic@drawbridge.club:~/ 
+	        ok ;;
+	    farm )
+	    	bot "deploying farm"
+	        scp -r tilde.farm/public_html/* antic@tilde.farm:~/public_html/ 
+	        ok ;;
+	    hyper )
+	    	bot "deploying hyper"
+	        scp -r hypertext.website/* antic@hypertext.website:~/ 
+	        ok ;;
+	    nuke )
+	    	bot "deploying nuke"
+	        scp -r totallynuclear.club/* antic@totallynuclear.club:~/ 
+	        ok ;;
+	    town )
+	    	bot "deploying town"
+	        scp -r tilde.town/* antic@tilde.town:~/ 
+	        ok ;;
+	    *)
+	    	bot "you can run 'deploy' with the following options:\n"
+	    	echo "bridge, hyper, farm, town, nuke, all"
+	    	;;
+	esac
+}
+
+case "$1" in
+    deploy)
+        doDeploy $2
+        ;;
+    *)
+        bot "Hi, I have several helper commands you can use.\n"
+        echo -e "Run each as an argument to this script (e.g. './dev deploy town'):\n"
+        echo "deploy {dest} - deploy to a destination tilde"
+        ;;
+esac
