@@ -49,8 +49,8 @@ case "$1" in
         doDeploy $2
         ;;
     *)
-        bot "Hi, I have several helper commands you can use.\n"
-        echo -e "Run each as an argument to this script (e.g. './dev deploy town'):\n"
+        bot "Hi, I can go do some things.\n"
+        echo -e "Run each as an argument to this script (e.g. 'go deploy nuke'):\n"
         echo "deploy {dest} - deploy to a destination tilde"
         ;;
 esac
