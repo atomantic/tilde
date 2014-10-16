@@ -7,6 +7,7 @@
 <title>~antic@drawbridge.club</title>
 <style type="text/css">
   body {
+    padding:0;margin:0;
     font-family: monospace;
     background-color:#036;
   }
@@ -26,6 +27,12 @@
     margin:auto;
     display:block;
   }
+  #back {
+    z-index: -1;
+    height:50%;
+    width:100%;
+    position:absolute;
+  }
   .controller {
       background-color:#369;
       color:#eee;
@@ -35,23 +42,14 @@
       width:100%;
       margin:auto;
   }
+  a:link,a:hover,a:visited,a:active {
+    color:#c0c0c0;
+  }
 </style>
 </head>
 <body>
-  <header><marquee behavior="alternate" loop="5" scrolldelay="10" scrollamount="2" truespeed>\[._.]/</marquee></header>
-  <article class="controller">
-      <audio controls loop>
-        <source src="https://archive.org/download/DaftPunkTronLegacyEncomPartIi/DaftPunkTronLegacyEncomPartIi.ogg" type="audio/ogg">
-        <source src="https://archive.org/download/DaftPunkTronLegacyEncomPartIi/DaftPunkTronLegacyEncomPartIi.mp3" type="audio/mpeg">
-      </audio>
-      <marquee behavior="scroll" scrolldelay="60" scrollamount="1">Daft Punk - Tron Legacy: Encom Part II</marquee>
-  </article>
-  <article>
-    <p>\[._.]/ - It was 1999 and Fight Club had become a movie. My 19 year-old friends stumbled out into the daylight from that theater and nearly fell into the gutter from the baffling inanity of the days to come. We are not unique snowflakes; we are the all-singing all-dancing crap of the world. Or are we?</p>
-    <p>I thought back to my older brother trading warez in the internet underground, exploring MUD servers and zorking out. There's a world in there. A world of people exploring the limits of interconnectivity.</p>
-    <p>It began with an obscure domain name that nobody could spell. A hiding place for me to publish experiments and learn about the web. I played with code to create animations and <a href="http://en.wikipedia.org/wiki/WarGames">WOPR</a>-like feedback</p>
-    <p><marquee behavior="slide" loop="1" scrolldelay="10" scrollamount="2" truespeed>^[⊙_ʘ]^ shall we play a game?</marquee></p>
-    <marquee behavior="slide" loop="1" scrolldelay="10" scrollamount="2" truespeed>
+  <div id="back">
+    <marquee behavior="slide" loop="1" scrolldelay="1" scrollamount="6" truespeed>
 <pre>
              7------------------4
              |\                 |\
@@ -84,8 +82,17 @@
            10-----------------9
 </pre>
 </marquee>
-  <p>And then, after years of exploring and developing skills, I became <a href="http://adameivy.com">this guy</a>, sucked up into the world of tech, changing all my private publications to social media blurbs. I took down my poetry and doodles. I stopped writing and drawing.</p>
-  <p></p>
+  </div>
+  <header>
+    <marquee behavior="slide" loop="1" scrolldelay="10" scrollamount="2" truespeed>\[._.]/ - Oh, Hi!</marquee>
+  <h2>I'm <a href="http://adameivy.com">Adam Eivy</a></h2>
+  </header>
+  <article class="controller">
+      <audio controls loop>
+        <source src="https://archive.org/download/DaftPunkTronLegacyEncomPartIi/DaftPunkTronLegacyEncomPartIi.ogg" type="audio/ogg">
+        <source src="https://archive.org/download/DaftPunkTronLegacyEncomPartIi/DaftPunkTronLegacyEncomPartIi.mp3" type="audio/mpeg">
+      </audio>
+      <marquee behavior="scroll" scrolldelay="60" scrollamount="1">Daft Punk - Tron Legacy: Encom Part II</marquee>
   </article>
   <article>
     <p>\(• ◡ •)/ - A Deck of Playing Cards</p>
@@ -97,6 +104,16 @@
     <p>Here is a tiny preview (and early draft) sampling of the card deck I'm drawing as they will appear when printed on 12x16 canvas frames. I'll be finishing this up in the first part of 2015 and throwing out a Kickstarter with the goal of getting this deck into as many hands as possible.</p>
     <img src="card_preview.jpg" />
     <p>Interested in a deck or a canvas print? Hit me up on everyone else's social network: <a href="http://twitter.com/antic">@antic</a></p>
+  </article>
+  <article>
+    <h2>All my ~</h2>
+    <ul>
+      <li><a href="http://drawbridge.club/~antic">http://drawbridge.club/~antic</a></li>
+      <li><a href="http://hypertext.website/~antic">http://hypertext.website/~antic</a></li>
+      <li><a href="http://tilde.farm/~antic">http://tilde.farm/~antic</a></li>
+      <li><a href="http://tilde.town/~antic">http://tilde.town/~antic</a></li>
+      <li><a href="http://totallynuclear.club/~antic">http://totallynuclear.club/~antic</a></li>
+    </ul>
   </article>
 </body>
 </html>
