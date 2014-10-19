@@ -1,0 +1,26 @@
+{
+  "name": "tilde",
+  "version": "0.1.0",
+  "private": true,
+  "description": "tilde management tools",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atomantic/tilde.git"
+  },
+  "keywords": [
+    "tilde",
+    "tildeverse",
+    "hosting",
+    "management"
+  ],
+  "author": "Adam Eivy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomantic/tilde/issues"
+  },
+  "homepage": "https://github.com/atomantic/tilde"
+}

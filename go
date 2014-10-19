@@ -3,6 +3,13 @@
 # include my library helpers for colorized echo and require_brew, etc
 source ./lib/echobot.sh
 
+function push(){
+	bot "deploying to "$1
+	rsync -avz --exclude '.DS_Store' ./~/$1/* antic@$1:~/
+	rsync -avz --exclude '.DS_Store' --delete shared/public_html/* antic@$1:~/public_html/
+	ok
+}
+
 function doDeploy(){
 	case "$1" in
 	    all )
@@ -14,34 +21,23 @@ function doDeploy(){
 	        doDeploy town
 	    	;;
 	    bridge )
-	    	bot "deploying bridge"
-	        scp -r drawbridge.club/* antic@drawbridge.club:~/
-	        #scp -r shared/public_html/* antic@drawbridge.club:~/public_html/
-	        ok ;;
+	    	push drawbridge.club
+	        ;;
 	    center )
-	    	bot "deploying center"
-	        scp -r tilde.center/* antic@tilde.center:~/
-	        ok ;;
+	        push tilde.center
+	        ;;
 	    farm )
-	    	bot "deploying farm"
-	        scp -r tilde.farm/public_html/* antic@tilde.farm:~/public_html/ 
-	        #scp -r shared/public_html/* antic@tilde.farm:~/public_html/
-	        ok ;;
+	        push tilde.farm
+	        ;;
 	    hyper )
-	    	bot "deploying hyper"
-	        scp -r hypertext.website/* antic@hypertext.website:~/ 
-	        #scp -r shared/public_html/* antic@hypertext.website:~/public_html/
-	        ok ;;
+	        push hypertext.website
+	        ;;
 	    nuke )
-	    	bot "deploying nuke"
-	        scp -r totallynuclear.club/* antic@totallynuclear.club:~/ 
-	        #scp -r shared/public_html/* antic@totallynuclear.club:~/public_html/
-	        ok ;;
+	        push totallynuclear.club
+	        ;;
 	    town )
-	    	bot "deploying town"
-	        scp -r tilde.town/* antic@tilde.town:~/ 
-	        #scp -r shared/public_html/* antic@tilde.town:~/public_html/
-	        ok ;;
+	        push tilde.town
+	        ;;
 	    *)
 	    	bot "you can run 'deploy' with the following options:\n"
 	    	echo "bridge, hyper, farm, town, nuke, all"
