@@ -7,15 +7,20 @@ function doDeploy(){
 	case "$1" in
 	    all )
 	        doDeploy bridge
+	        doDeploy center
 	        doDeploy farm
 	        doDeploy hyper
 	        doDeploy nuke
 	        doDeploy town
-	    ;;
+	    	;;
 	    bridge )
 	    	bot "deploying bridge"
 	        scp -r drawbridge.club/* antic@drawbridge.club:~/
 	        #scp -r shared/public_html/* antic@drawbridge.club:~/public_html/
+	        ok ;;
+	    center )
+	    	bot "deploying center"
+	        scp -r tilde.center/* antic@tilde.center:~/
 	        ok ;;
 	    farm )
 	    	bot "deploying farm"
