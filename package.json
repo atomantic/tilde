@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/atomantic/tilde/issues"
   },
-  "homepage": "https://github.com/atomantic/tilde"
+  "homepage": "https://github.com/atomantic/tilde",
+  "devDependencies": {
+    "gulp": "^3.8.8"
+  }
 }
