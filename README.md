@@ -15,3 +15,33 @@ You can find me on the mainstream web in many other places:
 - [old portfolio](http://adameivy.com)
 - [twitter: @antic](https://twitter.com/antic)
 - [facebook: @atomantic](https://twitter.com/atomantic)
+
+
+## Notes on this project
+
+- I'm currently converting this project to be more DRY and more generically useful for managing multiple ~ accounts
+- Go ahead and fork and pull-request if you like :)
+
+## TODO
+
+- convert go bash script to gulp tasks
+- read tilde sites from ~.json and allow commands configured via that
+- pull out all copies of similar content to shared and template directories
+- generate shared/allmy~.html from ~.json
+- add gulp build task to generate ~ index.html sites using shared template content
+
+# Structure
+
+
+# Commands
+Assuming `./` is in your PATH (otherwise, you will have to `./go`)
+
+Deploy all ~ sites:
+```
+go deploy all
+```
+
+Deploy a single ~ site:
+```
+go deploy nuke
+```
