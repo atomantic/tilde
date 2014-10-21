@@ -17,6 +17,7 @@ function doDeploy(){
 	        doDeploy center
 	        doDeploy cybyte
 	        doDeploy farm
+	        doDeploy german
 	        doDeploy hyper
 	        doDeploy nuke
 	        doDeploy town
@@ -33,6 +34,9 @@ function doDeploy(){
 	    farm )
 	        push tilde.farm
 	        ;;
+	    geman )
+			push germantil.de
+			;;
 	    hyper )
 	        push hypertext.website
 	        ;;

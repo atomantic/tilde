@@ -1,10 +1,12 @@
 # all my ~
 
+- [cybyte.club/~antic](http://cybyte.club/~antic)
 - [drawbridge.club/~antic](http://drawbridge.club/~antic)
+- [germantil.de/~antic](http://germantil.de/~antic)
 - [hypertext.website/~antic](http://hypertext.website/~antic)
 - [tilde.center/~antic](http://tilde.center/~antic)
 - [tilde.town/~antic](http://tilde.town/~antic)
-- [tilde.farm/~antic](http://tilde.town/~antic)
+- [tilde.farm/~antic](http://tilde.farm/~antic)
 - [totallynuclear.club/~antic](http://totallynuclear.club/~antic)
 
 I'd be delighted to join your tilde server. My username is ~antic and you can get [my public ssh keys are here](https://raw.githubusercontent.com/atomantic/tilde/master/shared/.ssh/authorized_keys)
