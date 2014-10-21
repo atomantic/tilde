@@ -24,8 +24,8 @@ You can find me on the mainstream web in many other places:
 
 ## TODO
 
-- convert go bash script to gulp tasks
-- read tilde sites from ~.json and allow commands configured via that
+- generate `go` bash script from a `gulp setup` command
+	- read tilde sites from ~.json and allow commands configured via that
 - pull out all copies of similar content to shared and template directories
 - generate shared/allmy~.html from ~.json
 - add gulp build task to generate ~ index.html sites using shared template content

@@ -1,21 +1,32 @@
 {
-	~:[{
+	~:[
+	{
+		"user": "antic",
+		"host": "cybyte.club"
+	}
+	,{
 		"user": "antic",
 		"host": "drawbridge.club"
-	},{
+	}
+	,{
 		"user": "antic",
 		"host": "hypertext.website"
-	},{
+	}
+	,{
 		"user": "antic",
 		"host": "tilde.center"
-	},{
+	}
+	,{
 		"user": "antic",
 		"host": "tilde.farm"
-	},{
+	}
+	,{
 		"user": "antic",
 		"host": "tilde.town"
-	},{
+	}
+	,{
 		"user": "antic",
 		"host": "totallynuclear.club"
-	}]
+	}
+	]
 }

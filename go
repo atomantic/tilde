@@ -15,6 +15,7 @@ function doDeploy(){
 	    all )
 	        doDeploy bridge
 	        doDeploy center
+	        doDeploy cybyte
 	        doDeploy farm
 	        doDeploy hyper
 	        doDeploy nuke
@@ -22,6 +23,9 @@ function doDeploy(){
 	    	;;
 	    bridge )
 	    	push drawbridge.club
+	        ;;
+	    cybyte )
+	        push cybyte.club
 	        ;;
 	    center )
 	        push tilde.center
