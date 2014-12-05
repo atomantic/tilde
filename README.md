@@ -4,6 +4,7 @@
 - [drawbridge.club/~antic](http://drawbridge.club/~antic)
 - [germantil.de/~antic](http://germantil.de/~antic)
 - [hypertext.website/~antic](http://hypertext.website/~antic)
+- [retronet.net/~antic](http://retronet.net/~antic)
 - [tilde.center/~antic](http://tilde.center/~antic)
 - [tilde.town/~antic](http://tilde.town/~antic)
 - [tilde.farm/~antic](http://tilde.farm/~antic)

@@ -20,6 +20,7 @@ function doDeploy(){
 	        doDeploy german
 	        doDeploy hyper
 	        doDeploy nuke
+            doDeploy retro
 	        doDeploy town
 	    	;;
 	    bridge )
@@ -43,6 +44,9 @@ function doDeploy(){
 	    nuke )
 	        push totallynuclear.club
 	        ;;
+        retro )
+            push retronet.net
+            ;;
 	    town )
 	        push tilde.town
 	        ;;

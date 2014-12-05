@@ -25,6 +25,43 @@
       width:100%;
       margin:auto;
   }
+  #social {
+    text-align:center;
+    overflow: auto;
+    width: 500px;
+  }
+  #social a{
+    color:#13daec;
+    transition: color .15s ease;
+    display:inline-block;
+  }
+  #social a:hover{
+    color: #71e9f4;
+    text-shadow: none;
+    border: 0;
+  }
+  #social a:hover img {
+    background: rgba(255,255,255,.2);
+    border-color: #13daec;
+    box-shadow: 0 0 20px rgba(0,0,0,.55);
+  }
+  #social a img {
+    border: 0;
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    margin: 15px 0;
+    background: rgba(255,255,255,.40);
+    box-shadow: 0 0 10px rgba(0,0,0,.15);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+  }
+  #social a img:hover {
+      background-color: #69c;
+  }
 </style>
 </head>
 <body>
@@ -34,6 +71,26 @@
         <source src="https://archive.org/download/DaftPunkTronLegacyEncomPartIi/DaftPunkTronLegacyEncomPartIi.mp3" type="audio/mpeg">
       </audio>
       <marquee behavior="scroll" scrolldelay="60" scrollamount="1">Daft Punk - Tron Legacy: Encom Part II</marquee>
+  </article>
+  <article>
+    <h3>~antic: He's just <a href="http://adameivy.com" target="_blank">this guy</a>, you know?</h3>
+    <div id="social">
+        <a target="_blank" rel="nofollow" accesskey="t" href="http://twitter.com/antic" title="antic on Twitter">
+            <img src="img/twitter.svg" alt="T">
+        </a>
+        <a target="_blank" rel="nofollow" accesskey="h" href="http://github.com/atomantic" title="atomantic on github">
+            <img src="img/github.svg" alt="G">
+        </a>
+        <a target="_blank" rel="nofollow" accesskey="l" href="http://www.linkedin.com/in/antic" title="antic on LinkedIn">
+            <img src="img/linkedin.svg" alt="Li">
+        </a>
+        <a target="_blank" rel="nofollow" accesskey="f" href="http://facebook.com/atomantic" title="atomantic on Facebook">
+            <img src="img/facebook.svg" alt="Fb">
+        </a>
+        <a target="_blank" title="antic on Google+" href="https://plus.google.com/106473830349927971727" accesskey="g" rel="nofollow">
+            <img alt="G+" src="img/google.svg">
+        </a>
+    </div>
   </article>
   <article>
     <p>welcome to hyperspace</p>
@@ -71,16 +128,6 @@
            10-----------------9
 </pre>
 </marquee>
-  </article>
-  <article>
-    <h2>All my ~</h2>
-    <ul>
-      <li><a href="http://drawbridge.club/~antic">http://drawbridge.club/~antic</a></li>
-      <li><a href="http://hypertext.website/~antic">http://hypertext.website/~antic</a></li>
-      <li><a href="http://tilde.farm/~antic">http://tilde.farm/~antic</a></li>
-      <li><a href="http://tilde.town/~antic">http://tilde.town/~antic</a></li>
-      <li><a href="http://totallynuclear.club/~antic">http://totallynuclear.club/~antic</a></li>
-    </ul>
   </article>
 </body>
 </html>
