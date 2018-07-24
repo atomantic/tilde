@@ -22,6 +22,7 @@ function doDeploy(){
 	        doDeploy nuke
             doDeploy retro
 	        doDeploy town
+	        doDeploy s3
 	    	;;
 	    bridge )
 	    	push drawbridge.club
@@ -47,6 +48,10 @@ function doDeploy(){
         retro )
             push retronet.net
             ;;
+	    s3 )
+	        aws s3 cp ./~/s3/* s3://tildetowneivy
+	        aws s3 cp ./shared/public_html/ s3://tildetowneivy/ --recursive
+	        ;;
 	    town )
 	        push tilde.town
 	        ;;

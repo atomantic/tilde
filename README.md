@@ -48,3 +48,11 @@ Deploy a single ~ site:
 ```
 go deploy nuke
 ```
+
+
+# S3 hosting
+
+```
+aws s3 mb s3://webapp-eivytilde
+aws s3 sync  s3://webapp-eivytilde
+```
